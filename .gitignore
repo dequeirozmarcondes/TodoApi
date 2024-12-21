@@ -1,0 +1,48 @@
+# Build
+bin/
+obj/
+
+# Pacotes NuGet
+*.nupkg
+*.snupkg
+
+# Configurações de IDEs
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Arquivos temporários do sistema
+[Tt]humbs.db
+[Dd]esktop.ini
+.DS_Store
+*.swp
+
+# Exclusões específicas por sistema operacional
+### macOS ###
+*.DS_Store
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Linux ###
+*~
+
+# Configurações de publicação
+publish/
+wwwroot/
+
+# Configurações sensíveis ou secretas
+secrets.json
+appsettings.Development.json
+
+# Exclusões para Git (não é necessário excluir a pasta do Git ou este arquivo)
+# .git/
+# .gitignore
