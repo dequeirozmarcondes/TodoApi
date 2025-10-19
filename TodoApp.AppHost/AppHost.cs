@@ -6,11 +6,9 @@ var apiService = builder.AddProject<Projects.TodoApp>("todoapp");
 // 2. Adiciona o servidor PostgreSQL (o container)
 var postgres = builder.AddPostgres("postgres-server")
     // Imagem padrão do PostgreSQL
+    .WithPgAdmin()
     .WithImage("postgres")
-     // Opcional: para persistência de dados em dev, 
-     // para que os dados não sumam a cada restart
-     //.WithVolume("postgres-volume");
-     .WithDataVolume("todoapp-volume");
+    .WithDataVolume("todoapp-volume");
 
 // 3. Adiciona um banco de dados específico (TodoDb) ao servidor
 var db = postgres.AddDatabase("TodoDb");

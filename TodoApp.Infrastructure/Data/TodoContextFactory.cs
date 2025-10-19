@@ -15,7 +15,7 @@ namespace TodoApp.Infrastructure.Data
 
             // 🚨 AJUSTE O VALOR DA STRING DE CONEXÃO DE DESENVOLVIMENTO ABAIXO 🚨
             // Use uma string de conexão que funcione no seu ambiente local (PostgreSQL)
-            var connectionString = "Host=localhost;Port=58107;Username=postgres;Password=a{*~8e676YdtyPFXM*ek7U;Database=TodoDb";
+            var connectionString = "Host=localhost;Port=56688;Username=postgres;Password=a{*~8e676YdtyPFXM*ek7U;Database=TodoDb";
 
             // Assumindo que você está usando Npgsql (PostgreSQL)
             builder.UseNpgsql(connectionString);
