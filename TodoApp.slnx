@@ -5,4 +5,5 @@
   <Project Path="TodoApp.Infrastructure/TodoApp.Infrastructure.csproj" />
   <Project Path="TodoApp.ServiceDefaults/TodoApp.ServiceDefaults.csproj" />
   <Project Path="TodoApp/TodoApp.csproj" />
+  <Project Path="TodoAppIdentity/TodoAppIdentity.csproj" />
 </Solution>

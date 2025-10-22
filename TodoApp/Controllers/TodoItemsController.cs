@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TodoApp.Application.Services;
 using TodoApp.Application.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TodoApp.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class TodoItemsController(ITodoItemService todoItemService) : ControllerBase
 {
     private readonly ITodoItemService _todoItemService = todoItemService;

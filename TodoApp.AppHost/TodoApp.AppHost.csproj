@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TodoAppIdentity\TodoAppIdentity.csproj" />
     <ProjectReference Include="..\TodoApp\TodoApp.csproj" />
   </ItemGroup>
 
